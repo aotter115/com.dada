@@ -12,7 +12,8 @@ public class CarRent {
                 new Pickup("皮卡",180,4,2),
                 new Truck("大型货车",220,3),
                 new PassengerCar("小型客车",160,9),
-                new PassengerCar("宝马",200,8)
+
+
         };
         System.out.println("你是否需要租车？");
         System.out.println("是：1，否：0");
