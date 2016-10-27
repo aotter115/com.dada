@@ -13,7 +13,6 @@ public class CarRent {
                 new Truck("大型货车",220,3),
                 new PassengerCar("小型客车",160,9),
 
-
         };
         System.out.println("你是否需要租车？");
         System.out.println("是：1，否：0");
@@ -70,17 +69,28 @@ public class CarRent {
         }
     }
 }
+//实现接口
+interface Auto {
+    String getName();
+}
 
-class Car{
-    public  String name;
-    public  int dailyrent ;//日租金
+
+class Car implements Auto{
+    private String name;
+    public String getName(){
+        return name;
+    }
+    public void setName(String newName){
+        name = newName;
+    }
+    public int dailyrent;
 }
 
 class  Pickup extends  Car{
     public int cargocapacity;//载货量
     public int busload;//载客量
     public  Pickup(String newname ,int newdailtrent,int newcargocapacity,int newbusload){
-        this.name = newname;
+        Car Pickup = new Car();
         this.dailyrent = newdailtrent;
         this.cargocapacity = newcargocapacity;
         this.busload = newbusload;
