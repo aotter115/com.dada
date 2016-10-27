@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CarRent {
     public static void main(String[] args) {
-        System.out.println("欢迎使用dada租车系统！");
+        System.out.println("欢迎使用dada租车系统");
         Car[] cars = {
                 new PassengerCar("东风标致",120,5),
                 new Truck("小货车",150,5),
@@ -14,7 +14,7 @@ public class CarRent {
                 new PassengerCar("小型客车",160,9),
                 new PassengerCar("宝马",200,8)
         };
-        System.out.println("你是否需要租车？");
+        System.out.println("您是否需要租车？");
         System.out.println("是：1，否：0");
         Scanner x = new Scanner(System.in);
         int choice = x.nextInt();
